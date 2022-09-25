@@ -24,9 +24,9 @@ public class Manager {
         return films;
     }
 
-    public String[] findLast(int numberOfFilms) {
+    public String[] findLast() {
         int length;
-        if (numberOfFilms > films.length) {
+        if (films.length < numberOfFilms) {
             length = films.length;
         } else {
             length = numberOfFilms;
